@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title> Calculator </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script type='text/javascript' src='clientValidate.js'></script>	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+	</head>
+	
+	<body ng-app = "myApp" ng-controller="calculatorClientCtrl">				
+			<div style="text-align:center;">
+	   			<h1> Simple Calculator </h1> 
+	   
+				Operand1 <input size="10" dir="rtl" type = "text" name="number1" id="number1" ng-model="number1">  <br> <br>
+				Operand2 <input size="10" dir="rtl" type = "text" name="number2" id="number2" ng-model="number2">  <br> <br>
+				
+				<div class="btn-group" >
+				    <button type="button" class="btn btn-primary" ng-click= "add()" >Add</button>
+				    <button type="button" class="btn btn-primary" ng-click= "subtract()" >Subtract</button>
+				    <button type="button" class="btn btn-primary" ng-click= "multiply()" >Multiply</button>
+				    <button type="button" class="btn btn-primary" ng-click= "divide()" >Divide</button>
+                </div> 
+				
+				<p id="resultPara" ng-model="result"> {{result}} </p>
+			
+			</div>	
+			 	
+	</body>
+
+</html>
